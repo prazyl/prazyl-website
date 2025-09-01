@@ -117,12 +117,13 @@ export default function FAQSection() {
             >
               Contact Support
             </a>
-            <a
+            {/* TODO: Enable when sales team is ready */}
+            {/* <a
               href="mailto:support@prazyl.com"
               className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-slate-600 text-base font-medium rounded-md text-gray-700 dark:text-slate-300 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
             >
               Contact Sales
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
