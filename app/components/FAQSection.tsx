@@ -29,8 +29,8 @@ const faqs = [
     answer: "Yes, we provide data migration assistance to help you import your existing claims, contacts, and documents. Our team will work with you to ensure a smooth transition from your current system to PRĀZYL."
   },
   {
-    question: "Is PRĀZYL suitable for independent adjusters?",
-    answer: "Absolutely! Our Starter plan is designed specifically for independent adjusters and small agencies. It provides all the essential tools you need to manage claims professionally while staying within budget."
+    question: "Is PRĀZYL suitable for independent appraisers?",
+    answer: "Absolutely! Our Starter plan is designed specifically for independent appraisers and small agencies. It provides all the essential tools you need to manage claims professionally while staying within budget."
   },
   {
     question: "Do you offer training for new users?",
