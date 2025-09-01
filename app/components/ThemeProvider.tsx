@@ -17,12 +17,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const stored = localStorage.getItem('theme') as Theme;
     const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     const initialTheme = stored || systemTheme;
     
-    setTheme(initialTheme);
-    setMounted(true);
+    if (stored || systemTheme) {
+      setTheme(initialTheme);
+    }
   }, []);
 
   useEffect(() => {
@@ -35,6 +37,15 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const toggleTheme = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
+
+  // Prevent flash of wrong theme by not rendering until mounted
+  if (!mounted) {
+    return (
+      <ThemeContext.Provider value={{ theme: 'light', setTheme, toggleTheme }}>
+        {children}
+      </ThemeContext.Provider>
+    );
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>

@@ -73,6 +73,21 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://prazyl.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme') || 
+                             (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })();
+            `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
