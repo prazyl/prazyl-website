@@ -32,10 +32,11 @@ const faqs = [
     question: "Is PRĀZYL suitable for independent appraisers?",
     answer: "Absolutely! Our Starter plan is designed specifically for independent appraisers and small agencies. It provides all the essential tools you need to manage claims professionally while staying within budget."
   },
-  {
-    question: "Do you offer training for new users?",
-    answer: "Yes, we provide comprehensive onboarding for all new customers, including live training sessions, video tutorials, and detailed documentation. Professional and Enterprise customers also get personalized training sessions with our team."
-  },
+  // TODO: Enable when training programs are ready
+  // {
+  //   question: "Do you offer training for new users?",
+  //   answer: "Yes, we provide comprehensive onboarding for all new customers, including live training sessions, video tutorials, and detailed documentation. Professional and Enterprise customers also get personalized training sessions with our team."
+  // },
   {
     question: "Can I customize templates and workflows?",
     answer: "Yes, PRĀZYL allows you to create and customize email templates, document templates, and automation workflows. Professional and Enterprise plans offer advanced customization options including white-label branding."
