@@ -65,7 +65,7 @@ export default function HeroSection() {
               {/* Trust indicators */}
               <div className="mt-8">
                 <p className="text-sm font-medium text-gray-500 dark:text-slate-400 tracking-wider uppercase">
-                  Trusted by insurance professionals
+                  Trusted by insurance professionals worldwide
                 </p>
               </div>
             </div>
