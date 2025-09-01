@@ -196,22 +196,6 @@ Or save {plan.name === 'Starter' ? '5%' : '10%'} with yearly billing
           </div>
         </div>
 
-        {/* FAQ teaser */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-500 dark:text-slate-400">
-            Have questions about our pricing? {' '}
-            <Link href="#faq" className="text-blue-600 dark:text-blue-400 hover:underline">
-              Check our FAQ
-            </Link>
-            {' '} or {' '}
-            <a 
-              href="mailto:support@prazyl.com" 
-              className="text-blue-600 dark:text-blue-400 hover:underline"
-            >
-              contact our sales team
-            </a>
-          </p>
-        </div>
       </div>
     </section>
   );
