@@ -137,9 +137,12 @@ export default function FeaturesSection() {
               <p className="mb-6 opacity-90">
                 Schedule a personalized demo to see how PRĀZYL can transform your claims management process.
               </p>
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+              <a 
+                href="mailto:support@prazyl.com?subject=Request%20for%20PRĀZYL%20Demo&body=Hello,%0A%0AI%20would%20like%20to%20schedule%20a%20demo%20of%20PRĀZYL.%0A%0AThank%20you!"
+                className="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+              >
                 Schedule Demo
-              </button>
+              </a>
             </div>
           </div>
         </div>
