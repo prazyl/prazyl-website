@@ -74,7 +74,8 @@ export default function Footer() {
               Professional insurance claims management software that automates business workflows 
               and manages documents in a fully customizable environment.
             </p>
-            <div className="flex space-x-6">
+            {/* TODO: Enable when social media accounts are ready */}
+            {/* <div className="flex space-x-6">
               {social.map((item) => (
                 <a
                   key={item.name}
@@ -87,7 +88,7 @@ export default function Footer() {
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
