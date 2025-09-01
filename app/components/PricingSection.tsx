@@ -8,7 +8,7 @@ const plans = [
     name: 'Starter',
     price: 99,
     yearlyPrice: 940.50,
-    description: 'Perfect for independent appraisers and small agencies',
+    description: 'Essential tools with unlimited claims processing for independent appraisers',
     features: [
       'Unlimited claims processing',
       '5 document templates',
@@ -27,7 +27,7 @@ const plans = [
     name: 'Professional',
     price: 149,
     yearlyPrice: 1341,
-    description: 'Ideal for growing agencies and teams',
+    description: 'Advanced templates, automation, and API access for growing agencies',
     features: [
       'Unlimited claims processing',
       '25 document templates',
@@ -48,7 +48,7 @@ const plans = [
     name: 'Enterprise',
     price: 199,
     yearlyPrice: 1691,
-    description: 'For large organizations with complex needs',
+    description: 'Unlimited resources, custom workflows, and enterprise integrations',
     features: [
       'Unlimited claims processing',
       'Unlimited document templates',
