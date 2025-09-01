@@ -7,7 +7,7 @@ const plans = [
   {
     name: 'Starter',
     price: 99,
-    yearlyPrice: 940.50,
+    yearlyPrice: 990,
     description: 'Essential tools with unlimited claims processing for independent appraisers',
     features: [
       'Unlimited claims processing',
@@ -26,7 +26,7 @@ const plans = [
   {
     name: 'Professional',
     price: 149,
-    yearlyPrice: 1341,
+    yearlyPrice: 1490,
     description: 'Advanced templates, automation, and API access for growing agencies',
     features: [
       'Unlimited claims processing',
@@ -47,7 +47,7 @@ const plans = [
   {
     name: 'Enterprise',
     price: 199,
-    yearlyPrice: 1691,
+    yearlyPrice: 1990,
     description: 'Unlimited resources, custom workflows, and enterprise integrations',
     features: [
       'Unlimited claims processing',
@@ -103,7 +103,7 @@ export default function PricingSection() {
                 Monthly
               </button>
               <button className="relative w-1/2 py-2 px-3 text-sm font-medium text-gray-500 dark:text-slate-400 rounded-md transition-all">
-Yearly <span className="text-xs text-green-600 dark:text-green-400 ml-1">(Save up to 15%)</span>
+Yearly <span className="text-xs text-green-600 dark:text-green-400 ml-1">(Save up to $398/year)</span>
               </button>
             </div>
           </div>
@@ -132,8 +132,8 @@ Yearly <span className="text-xs text-green-600 dark:text-green-400 ml-1">(Save u
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{plan.name}</h3>
                 <p className="mt-4 text-gray-500 dark:text-slate-400">{plan.description}</p>
                 
-                <div className="mt-8">
-                  <div className="flex items-baseline">
+                <div className="mt-8 text-center">
+                  <div className="flex items-baseline justify-center">
                     <span className="text-5xl font-extrabold text-gray-900 dark:text-white">
                       ${plan.price}
                     </span>
@@ -141,8 +141,8 @@ Yearly <span className="text-xs text-green-600 dark:text-green-400 ml-1">(Save u
                       /month
                     </span>
                   </div>
-                  <p className="mt-1 text-sm text-gray-500 dark:text-slate-400">
-                    or ${plan.yearlyPrice} yearly (save {plan.name === 'Starter' ? '5%' : plan.name === 'Professional' ? '10%' : '15%'})
+                  <p className="mt-1 text-sm text-green-600 dark:text-green-400">
+                    or ${plan.yearlyPrice} yearly (save {plan.name === 'Starter' ? '$198/year' : plan.name === 'Professional' ? '$298/year' : '$398/year'})
                   </p>
                 </div>
 
@@ -172,7 +172,7 @@ Yearly <span className="text-xs text-green-600 dark:text-green-400 ml-1">(Save u
                       onClick={() => handlePlanSelect(plan, true)}
                       className="w-full py-2 px-6 text-sm text-gray-600 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-300 transition-colors"
                     >
-Or save {plan.name === 'Starter' ? '5%' : '10%'} with yearly billing
+Or save {plan.name === 'Starter' ? '$198/year' : '$298/year'} with yearly billing
                     </button>
                   )}
                 </div>
