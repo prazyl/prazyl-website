@@ -2,12 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Moon, Sun } from 'lucide-react';
-import { useTheme } from './ThemeProvider';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="bg-white dark:bg-slate-800 shadow-sm border-b border-gray-200 dark:border-slate-700">
@@ -51,19 +49,6 @@ export default function Header() {
 
           {/* Right side buttons */}
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 space-x-4">
-            {/* Theme toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-300 transition-colors"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? (
-                <Sun className="h-5 w-5" />
-              ) : (
-                <Moon className="h-5 w-5" />
-              )}
-            </button>
-
             <Link
               href="https://prazyl.app/login"
               className="whitespace-nowrap text-base font-medium text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white"
@@ -142,17 +127,6 @@ export default function Header() {
                 >
                   Sign in
                 </Link>
-                <button
-                  onClick={toggleTheme}
-                  className="p-2 text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-300 transition-colors"
-                  aria-label="Toggle theme"
-                >
-                  {theme === 'dark' ? (
-                    <Sun className="h-5 w-5" />
-                  ) : (
-                    <Moon className="h-5 w-5" />
-                  )}
-                </button>
               </div>
               <div>
                 <Link
