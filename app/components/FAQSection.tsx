@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "What kind of support do you provide?",
-    answer: "We offer comprehensive support including email support for all plans, priority support for Professional plans, and 24/7 phone support for Enterprise customers. We also provide onboarding assistance, training materials, and a detailed knowledge base."
+    answer: "We offer comprehensive support including email support for all plans and priority support for Professional and Enterprise Plans. We also provide onboarding assistance, training materials, and a detailed knowledge base."
   },
   {
     question: "Can I import my existing claims data?",
