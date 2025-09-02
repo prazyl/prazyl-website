@@ -7,6 +7,23 @@
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
+## Deployment
+
+To successfully deploy updates:
+
+1. **Git deployment (automatic via webhook):**
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   git push origin main
+   ```
+   
+2. **Manual Vercel deployment (if git webhook fails):**
+   ```bash
+   vercel --prod
+   ```
+   - Production URL: https://prazyl-website-j4ez2epvr-ryan-pontbriands-projects.vercel.app
+
 ## Project Structure
 
 This is a Next.js 15 project with:

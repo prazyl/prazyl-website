@@ -5,13 +5,13 @@ const navigation = {
   product: [
     { name: 'Features', href: '#features', active: true },
     { name: 'Pricing', href: '#pricing', active: true },
-    { name: 'Integrations', href: '/integrations', active: false },
-    { name: 'API Documentation', href: '/docs/api', active: false },
+    { name: 'Integrations', href: '/integrations', active: true },
+    { name: 'API Documentation', href: '/docs/api', active: true },
   ],
   support: [
     { name: 'Help Center', href: '/help', active: false },
     { name: 'Contact Support', href: 'mailto:support@prazyl.com', active: true },
-    { name: 'System Status', href: '/status', active: false },
+    { name: 'System Status', href: '/status', active: true },
     { name: 'Training', href: '/training', active: false },
   ],
   company: [
@@ -232,7 +232,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; {new Date().getFullYear()} PRĀZYL, Inc. All rights reserved. 
+            &copy; {new Date().getFullYear()} Ultex LLC. All rights reserved. 
           </p>
         </div>
       </div>
