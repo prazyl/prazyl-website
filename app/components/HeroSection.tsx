@@ -1,97 +1,148 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, Shield, Calendar, FileText, Mail } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-white dark:bg-slate-900 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white dark:bg-slate-900 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <svg
-            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white dark:text-slate-900 transform translate-x-1/2"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-600/10 via-transparent to-transparent" />
+
+      {/* Grid pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="text-center">
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-8"
           >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            Now in Beta — Join the Waitlist
+          </motion.div>
 
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Streamline Your</span>
-                <span className="block text-blue-600 xl:inline"> Insurance Claims</span>
-              </h1>
-              <p className="mt-3 text-base text-gray-500 dark:text-slate-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Professional claims management software that automates business workflows and manages documents in a fully customizable environment. Transform your insurance operations with PRĀZYL.
-              </p>
-              
-              {/* Benefits */}
-              <div className="mt-6 flex flex-col sm:flex-row sm:space-x-8 space-y-2 sm:space-y-0">
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span className="text-sm text-gray-600 dark:text-slate-400">60-day free trial</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span className="text-sm text-gray-600 dark:text-slate-400">No setup fees</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span className="text-sm text-gray-600 dark:text-slate-400">Cancel anytime</span>
-                </div>
-              </div>
+          {/* Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
+          >
+            <span className="text-white">Claims management</span>
+            <br />
+            <span className="text-blue-500">built for appraisers</span>
+          </motion.h1>
 
-              <div className="mt-8 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
-                  <Link
-                    href="https://prazyl.app/signup"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors group"
-                  >
-                    Start Free Trial
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
+          {/* Subheadline */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-6 text-lg sm:text-xl text-[#a1a1aa] max-w-2xl mx-auto"
+          >
+            The modern platform for independent appraisers. Manage claims, schedule inspections,
+            generate documents, and sync with Google — all in one place.
+          </motion.p>
 
-              {/* Trust indicators */}
-              <div className="mt-8">
-                <p className="text-sm font-medium text-gray-500 dark:text-slate-400 tracking-wider uppercase">
-                  Trusted by insurance professionals worldwide
-                </p>
-              </div>
+          {/* CTA Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <Link
+              href="https://prazyl.app/auth/sign-up"
+              className="group flex items-center gap-2 px-8 py-4 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-all"
+            >
+              Start Free Trial
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <Link
+              href="#features"
+              className="px-8 py-4 text-base font-medium text-[#a1a1aa] hover:text-white border border-[#27272a] hover:border-[#3f3f46] rounded-lg transition-all"
+            >
+              See Features
+            </Link>
+          </motion.div>
+
+          {/* Trust indicators */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="mt-16 flex flex-wrap items-center justify-center gap-8 text-[#71717a] text-sm"
+          >
+            <div className="flex items-center gap-2">
+              <svg className="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span>30-day free trial</span>
             </div>
-          </main>
+            <div className="flex items-center gap-2">
+              <svg className="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span>No credit card required</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span>Cancel anytime</span>
+            </div>
+          </motion.div>
         </div>
-      </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <div className="h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-          {/* Dashboard Preview */}
-          <div className="bg-white dark:bg-slate-800 rounded-lg shadow-2xl p-6 m-8 max-w-md">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-              <div className="flex-1 bg-gray-100 dark:bg-slate-700 rounded px-3 py-1">
-                <span className="text-xs text-gray-500 dark:text-slate-400">prazyl.app/claims</span>
-              </div>
+
+        {/* Feature preview cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4"
+        >
+          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
+            <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">
+              <FileText className="h-5 w-5 text-blue-500" />
             </div>
-            <div className="space-y-3">
-              <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded"></div>
-              <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-4/5"></div>
-              <div className="h-8 bg-blue-100 dark:bg-blue-900 rounded flex items-center px-3">
-                <span className="text-xs text-blue-600 dark:text-blue-400">Active Claims</span>
-              </div>
-              <div className="grid grid-cols-2 gap-2">
-                <div className="h-6 bg-gray-100 dark:bg-slate-700 rounded"></div>
-                <div className="h-6 bg-gray-100 dark:bg-slate-700 rounded"></div>
-              </div>
-              <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-3/5"></div>
-            </div>
+            <h3 className="font-medium text-white">Claims</h3>
+            <p className="text-sm text-[#71717a] mt-1">Track every claim from start to finish</p>
           </div>
-        </div>
+          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
+            <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center mb-4">
+              <Calendar className="h-5 w-5 text-green-500" />
+            </div>
+            <h3 className="font-medium text-white">Calendar</h3>
+            <p className="text-sm text-[#71717a] mt-1">Schedule inspections with Google sync</p>
+          </div>
+          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
+            <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center mb-4">
+              <Mail className="h-5 w-5 text-purple-500" />
+            </div>
+            <h3 className="font-medium text-white">Inbox</h3>
+            <p className="text-sm text-[#71717a] mt-1">Gmail integration for all correspondence</p>
+          </div>
+          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
+            <div className="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-4">
+              <Shield className="h-5 w-5 text-amber-500" />
+            </div>
+            <h3 className="font-medium text-white">Documents</h3>
+            <p className="text-sm text-[#71717a] mt-1">Generate reports with templates</p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ const structuredData = {
   "@type": "SoftwareApplication",
   "name": "PRĀZYL",
   "applicationCategory": "BusinessApplication",
-  "description": "Professional insurance claims management software with automated workflows and document management in a fully customizable environment.",
+  "description": "The modern claims management platform built for independent appraisers. Manage claims, schedule inspections, and sync with Google — all in one place.",
   "url": "https://prazyl.com",
   "downloadUrl": "https://prazyl.app",
   "operatingSystem": "Web Browser",
@@ -69,13 +69,12 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-slate-900">
+      <div className="min-h-screen bg-[#0a0a0a]">
         <Header />
         <main>
           <HeroSection />
           <FeaturesSection />
           <PricingSection />
-          {/* <TestimonialsSection /> */}
           <FAQSection />
         </main>
         <Footer />

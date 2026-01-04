@@ -1,151 +1,178 @@
 'use client';
 
-import { 
-  FileText, 
-  Camera, 
-  Shield, 
-  BarChart3, 
-  Mail, 
+import {
+  FileText,
+  Camera,
+  FolderOpen,
   Calendar,
+  Mail,
   Zap,
-  CheckCircle,
-  Layout
+  Clock,
+  Users,
+  Receipt
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const features = [
   {
-    name: 'Automated Workflows',
-    description: 'Streamline your claims process with intelligent automation that reduces manual work and speeds up resolution times.',
-    icon: Zap,
-  },
-  {
-    name: 'Document Management',
-    description: 'Centralized document storage with smart search, version control, and secure access for all claim-related files.',
+    name: 'Claims Management',
+    description: 'Track claims through customizable workflow stages. Add contacts, photos, documents, and notes all in one place.',
     icon: FileText,
+    color: 'blue',
   },
   {
-    name: 'Dynamic Document Templates',
-    description: 'Create and customize document templates that automatically populate with claim data and adapt to your workflow needs.',
-    icon: Layout,
-  },
-  {
-    name: 'Digital Inspections',
-    description: 'Capture inspection photos, document damaged components, and record detailed notes with our comprehensive mobile inspection tools.',
+    name: 'Photo Inspections',
+    description: 'Capture and organize inspection photos by category. Tag photos to specific claims for easy reference.',
     icon: Camera,
+    color: 'green',
   },
   {
-    name: 'Email Integration',
-    description: 'Send professional emails directly from the platform with customizable templates and automated follow-ups.',
-    icon: Mail,
+    name: 'Document Generation',
+    description: 'Create professional documents from customizable templates with automatic merge fields.',
+    icon: FolderOpen,
+    color: 'purple',
   },
   {
-    name: 'Calendar Scheduling',
-    description: 'Integrated calendar system for managing appointments, inspections, and important claim milestones.',
+    name: 'Calendar & Scheduling',
+    description: 'Schedule inspections and appointments. Syncs with Google Calendar for seamless integration.',
     icon: Calendar,
+    color: 'amber',
   },
   {
-    name: 'Analytics & Reporting',
-    description: 'Comprehensive dashboards and reports to track claim performance, costs, and team productivity.',
-    icon: BarChart3,
+    name: 'Gmail Integration',
+    description: 'View and manage emails directly in the app. Link correspondence to claims automatically.',
+    icon: Mail,
+    color: 'red',
   },
   {
-    name: 'Security & Compliance',
-    description: 'Enterprise-grade security with encryption, audit trails, and compliance with insurance industry standards.',
-    icon: Shield,
+    name: 'Workflow Automation',
+    description: 'Set up automations to create tasks, send emails, or update claims when stages change.',
+    icon: Zap,
+    color: 'yellow',
   },
   {
-    name: 'Task Management',
-    description: 'Organize and prioritize tasks with automated reminders and deadline tracking for better claim resolution.',
-    icon: CheckCircle,
+    name: 'Find Time Slot',
+    description: 'AI-powered scheduling finds optimal appointment times based on location and availability.',
+    icon: Clock,
+    color: 'cyan',
+  },
+  {
+    name: 'Contacts & Companies',
+    description: 'Manage policyholders, carriers, and contractors. Link contacts to claims with custom roles.',
+    icon: Users,
+    color: 'indigo',
+  },
+  {
+    name: 'Invoicing',
+    description: 'Create and track invoices with flat rate, hourly, or combined billing options.',
+    icon: Receipt,
+    color: 'emerald',
   },
 ];
 
+const colorClasses: Record<string, string> = {
+  blue: 'bg-blue-500/10 text-blue-500',
+  green: 'bg-green-500/10 text-green-500',
+  purple: 'bg-purple-500/10 text-purple-500',
+  amber: 'bg-amber-500/10 text-amber-500',
+  red: 'bg-red-500/10 text-red-500',
+  yellow: 'bg-yellow-500/10 text-yellow-500',
+  cyan: 'bg-cyan-500/10 text-cyan-500',
+  indigo: 'bg-indigo-500/10 text-indigo-500',
+  emerald: 'bg-emerald-500/10 text-emerald-500',
+};
+
 export default function FeaturesSection() {
   return (
-    <section id="features" className="py-20 bg-gray-50 dark:bg-slate-800">
+    <section id="features" className="py-24 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2 className="text-base text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase">
+        <div className="text-center mb-16">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-blue-500 font-semibold tracking-wide uppercase text-sm"
+          >
             Features
-          </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            Everything you need to manage claims efficiently
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-slate-400 lg:mx-auto">
-            PRĀZYL provides comprehensive tools designed specifically for insurance professionals to streamline their claims management process.
-          </p>
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="mt-3 text-3xl sm:text-4xl font-bold text-white"
+          >
+            Everything you need to manage claims
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="mt-4 text-lg text-[#a1a1aa] max-w-2xl mx-auto"
+          >
+            PRAZYL brings together all the tools independent appraisers need
+            into one seamless platform.
+          </motion.p>
         </div>
 
-        <div className="mt-20">
-          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
-              <div key={feature.name} className="relative">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white mb-4">
-                  <feature.icon className="h-6 w-6" aria-hidden="true" />
-                </div>
-                <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
-                  {feature.name}
-                </h3>
-                <p className="mt-2 text-base text-gray-500 dark:text-slate-400">
-                  {feature.description}
-                </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map((feature, index) => (
+            <motion.div
+              key={feature.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.05 }}
+              className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors"
+            >
+              <div className={`w-12 h-12 rounded-lg ${colorClasses[feature.color]} flex items-center justify-center mb-4`}>
+                <feature.icon className="h-6 w-6" />
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Additional features showcase */}
-        <div className="mt-20 bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-lg">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Built for Insurance Professionals
+              <h3 className="text-lg font-semibold text-white mb-2">
+                {feature.name}
               </h3>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Multi-tenant Architecture</p>
-                    <p className="text-gray-500 dark:text-slate-400">Secure separation of data between organizations with role-based access control.</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Custom Templates</p>
-                    <p className="text-gray-500 dark:text-slate-400">Create and customize email templates, documents, and automated workflows.</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Mobile Ready</p>
-                    <p className="text-gray-500 dark:text-slate-400">Full mobile responsiveness for claims management on the go.</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Integration Ready</p>
-                    <p className="text-gray-500 dark:text-slate-400">Connect with Google Workspace, Microsoft 365, and other business tools.</p>
-                  </div>
-                </div>
+              <p className="text-[#a1a1aa] text-sm leading-relaxed">
+                {feature.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Google Integration callout */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/20 rounded-2xl p-8 md:p-12"
+        >
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold text-white mb-3">
+                Seamless Google Integration
+              </h3>
+              <p className="text-[#a1a1aa] text-lg">
+                Connect once and sync everywhere. Your calendar, emails, and documents
+                stay in sync with Google Workspace automatically.
+              </p>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center">
+                <svg className="h-8 w-8" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+              </div>
+              <div className="text-left">
+                <div className="text-white font-medium">Calendar</div>
+                <div className="text-white font-medium">Gmail</div>
+                <div className="text-white font-medium">Drive</div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg p-6 text-white">
-              <h4 className="text-lg font-semibold mb-4">See PRĀZYL in Action</h4>
-              <p className="mb-6 opacity-90">
-                Schedule a personalized demo to see how PRĀZYL can transform your claims management process.
-              </p>
-              <a 
-                href="mailto:support@prazyl.com?subject=Request%20for%20PRĀZYL%20Demo&body=Hello,%0A%0AI%20would%20like%20to%20schedule%20a%20demo%20of%20PRĀZYL.%0A%0AThank%20you!"
-                className="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-              >
-                Schedule Demo
-              </a>
-            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
