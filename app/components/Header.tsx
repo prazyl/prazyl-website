@@ -12,7 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 text-blue-500">
+          <Link href="/" className="flex items-center gap-2 text-teal-400">
             <Shield className="h-7 w-7" />
             <span className="text-xl font-bold tracking-wider">PRAZYL</span>
           </Link>
@@ -38,8 +38,11 @@ export default function Header() {
             <Link href="#features" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
               Features
             </Link>
-            <Link href="#pricing" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
-              Pricing
+            <Link href="#workflow" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
+              How it works
+            </Link>
+            <Link href="/integrations" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
+              Integrations
             </Link>
             <Link href="#faq" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
               FAQ
@@ -55,10 +58,10 @@ export default function Header() {
               Sign in
             </Link>
             <Link
-              href="https://prazyl.app/auth/sign-up"
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+              href="#waitlist"
+              className="px-4 py-2 text-sm font-medium text-[#0a0a0a] bg-teal-400 hover:bg-teal-300 rounded-lg transition-colors"
             >
-              Get Started
+              Join Waitlist
             </Link>
           </div>
         </div>
@@ -76,11 +79,18 @@ export default function Header() {
               Features
             </Link>
             <Link
-              href="#pricing"
+              href="#workflow"
               className="block text-base font-medium text-[#a1a1aa] hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Pricing
+              How it works
+            </Link>
+            <Link
+              href="/integrations"
+              className="block text-base font-medium text-[#a1a1aa] hover:text-white transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Integrations
             </Link>
             <Link
               href="#faq"
@@ -97,10 +107,11 @@ export default function Header() {
                 Sign in
               </Link>
               <Link
-                href="https://prazyl.app/auth/sign-up"
-                className="block w-full text-center px-4 py-2 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+                href="#waitlist"
+                onClick={() => setIsMenuOpen(false)}
+                className="block w-full text-center px-4 py-2 text-base font-medium text-[#0a0a0a] bg-teal-400 hover:bg-teal-300 rounded-lg transition-colors"
               >
-                Get Started
+                Join Waitlist
               </Link>
             </div>
           </div>

@@ -1,14 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Shield, Calendar, FileText, Mail } from 'lucide-react';
+import { ArrowRight, FileText, Calendar, Mail, FolderOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-600/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-teal-500/10 via-transparent to-transparent" />
 
       {/* Grid pattern */}
       <div
@@ -25,13 +25,13 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-sm font-medium mb-8"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
             </span>
-            Now in Beta — Join the Waitlist
+            Now in Private Beta
           </motion.div>
 
           {/* Headline */}
@@ -43,7 +43,7 @@ export default function HeroSection() {
           >
             <span className="text-white">Claims management</span>
             <br />
-            <span className="text-blue-500">built for appraisers</span>
+            <span className="text-teal-400">built for appraisers</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -54,7 +54,7 @@ export default function HeroSection() {
             className="mt-6 text-lg sm:text-xl text-[#a1a1aa] max-w-2xl mx-auto"
           >
             The modern platform for independent appraisers. Manage claims, schedule inspections,
-            generate documents, and sync with Google — all in one place.
+            generate documents, and sync with Google or Microsoft 365 — all in one place.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -65,10 +65,10 @@ export default function HeroSection() {
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link
-              href="https://prazyl.app/auth/sign-up"
-              className="group flex items-center gap-2 px-8 py-4 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-all"
+              href="#waitlist"
+              className="group flex items-center gap-2 px-8 py-4 text-base font-medium text-[#0a0a0a] bg-teal-400 hover:bg-teal-300 rounded-lg transition-all"
             >
-              Start Free Trial
+              Join the Waitlist
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
@@ -87,22 +87,22 @@ export default function HeroSection() {
             className="mt-16 flex flex-wrap items-center justify-center gap-8 text-[#71717a] text-sm"
           >
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="h-5 w-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>30-day free trial</span>
+              <span>Built for independent appraisers</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="h-5 w-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>No credit card required</span>
+              <span>Google &amp; Microsoft 365 ready</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="h-5 w-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Cancel anytime</span>
+              <span>Direct access to the team</span>
             </div>
           </motion.div>
         </div>
@@ -115,32 +115,32 @@ export default function HeroSection() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4"
         >
           <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
-            <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">
-              <FileText className="h-5 w-5 text-blue-500" />
+            <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex items-center justify-center mb-4">
+              <FileText className="h-5 w-5 text-teal-400" />
             </div>
             <h3 className="font-medium text-white">Claims</h3>
-            <p className="text-sm text-[#71717a] mt-1">Track every claim from start to finish</p>
-          </div>
-          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
-            <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center mb-4">
-              <Calendar className="h-5 w-5 text-green-500" />
-            </div>
-            <h3 className="font-medium text-white">Calendar</h3>
-            <p className="text-sm text-[#71717a] mt-1">Schedule inspections with Google sync</p>
-          </div>
-          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
-            <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center mb-4">
-              <Mail className="h-5 w-5 text-purple-500" />
-            </div>
-            <h3 className="font-medium text-white">Inbox</h3>
-            <p className="text-sm text-[#71717a] mt-1">Gmail integration for all correspondence</p>
+            <p className="text-sm text-[#71717a] mt-1">One workspace per claim, end to end</p>
           </div>
           <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
             <div className="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-4">
-              <Shield className="h-5 w-5 text-amber-500" />
+              <Calendar className="h-5 w-5 text-amber-400" />
+            </div>
+            <h3 className="font-medium text-white">Calendar</h3>
+            <p className="text-sm text-[#71717a] mt-1">Schedule inspections with two-way sync</p>
+          </div>
+          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
+            <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center mb-4">
+              <Mail className="h-5 w-5 text-purple-400" />
+            </div>
+            <h3 className="font-medium text-white">Inbox</h3>
+            <p className="text-sm text-[#71717a] mt-1">Gmail or Outlook, threaded to claims</p>
+          </div>
+          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-6 hover:border-[#3f3f46] transition-colors">
+            <div className="w-10 h-10 rounded-lg bg-rose-500/10 flex items-center justify-center mb-4">
+              <FolderOpen className="h-5 w-5 text-rose-400" />
             </div>
             <h3 className="font-medium text-white">Documents</h3>
-            <p className="text-sm text-[#71717a] mt-1">Generate reports with templates</p>
+            <p className="text-sm text-[#71717a] mt-1">Templates, e-signature, cloud sync</p>
           </div>
         </motion.div>
       </div>

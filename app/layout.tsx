@@ -7,14 +7,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://prazyl.com'),
   title: {
-    default: 'PRAZYL - Claims Management for Independent Appraisers',
-    template: '%s | PRAZYL'
+    default: 'Prazyl — Claims Management for Independent Appraisers',
+    template: '%s | Prazyl'
   },
-  description: 'The modern claims management platform built for independent appraisers. Manage claims, schedule inspections, and sync with Google — all in one place.',
-  keywords: ['claims management', 'independent appraisers', 'insurance appraisers', 'claims software', 'inspection scheduling', 'google calendar sync', 'gmail integration'],
-  authors: [{ name: 'PRAZYL' }],
-  creator: 'PRAZYL',
-  publisher: 'PRAZYL',
+  description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place. Currently in private beta.',
+  keywords: ['claims management', 'independent appraisers', 'insurance appraisers', 'claims software', 'inspection scheduling', 'appraiser software', 'symbility', 'xactimate'],
+  authors: [{ name: 'Prazyl' }],
+  creator: 'Prazyl',
+  publisher: 'Prazyl',
   formatDetection: {
     email: false,
     address: false,
@@ -24,22 +24,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://prazyl.com',
-    siteName: 'PRAZYL',
-    title: 'PRAZYL - Claims Management for Independent Appraisers',
-    description: 'The modern claims management platform built for independent appraisers. Manage claims, schedule inspections, and sync with Google.',
+    siteName: 'Prazyl',
+    title: 'Prazyl — Claims Management for Independent Appraisers',
+    description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'PRAZYL - Claims Management for Independent Appraisers',
+        alt: 'Prazyl — Claims Management for Independent Appraisers',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PRAZYL - Claims Management for Independent Appraisers',
-    description: 'The modern claims management platform built for independent appraisers. Manage claims, schedule inspections, and sync with Google.',
+    title: 'Prazyl — Claims Management for Independent Appraisers',
+    description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place.',
     images: ['/og-image.png'],
   },
   robots: {

@@ -10,13 +10,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 text-blue-500">
+            <Link href="/" className="flex items-center gap-2 text-teal-400">
               <Shield className="h-6 w-6" />
               <span className="text-lg font-bold tracking-wider">PRAZYL</span>
             </Link>
             <p className="mt-4 text-[#71717a] text-sm max-w-md">
-              The modern claims management platform built for independent appraisers.
-              Manage claims, schedule inspections, and sync with Google — all in one place.
+              Claims management built for independent appraisers. One workspace per claim,
+              from assignment to invoice. Currently in private beta.
             </p>
           </div>
 
@@ -25,18 +25,28 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Product</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#features" className="text-[#71717a] hover:text-white text-sm transition-colors">
+                <Link href="/#features" className="text-[#71717a] hover:text-white text-sm transition-colors">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="#pricing" className="text-[#71717a] hover:text-white text-sm transition-colors">
-                  Pricing
+                <Link href="/#workflow" className="text-[#71717a] hover:text-white text-sm transition-colors">
+                  How it works
                 </Link>
               </li>
               <li>
-                <Link href="#faq" className="text-[#71717a] hover:text-white text-sm transition-colors">
+                <Link href="/integrations" className="text-[#71717a] hover:text-white text-sm transition-colors">
+                  Integrations
+                </Link>
+              </li>
+              <li>
+                <Link href="/#faq" className="text-[#71717a] hover:text-white text-sm transition-colors">
                   FAQ
+                </Link>
+              </li>
+              <li>
+                <Link href="/#waitlist" className="text-[#71717a] hover:text-white text-sm transition-colors">
+                  Join the waitlist
                 </Link>
               </li>
             </ul>
@@ -66,10 +76,10 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="mailto:support@prazyl.com"
+              href="mailto:hello@prazyl.com"
               className="text-[#71717a] hover:text-white text-sm transition-colors"
             >
-              support@prazyl.com
+              hello@prazyl.com
             </a>
           </div>
         </div>

@@ -1,65 +1,24 @@
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
-import PricingSection from './components/PricingSection';
-// import TestimonialsSection from './components/TestimonialsSection';
+import WorkflowSection from './components/WorkflowSection';
+import WaitlistSection from './components/WaitlistSection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 
-// Structured Data for SEO
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "PRĀZYL",
+  "name": "Prazyl",
   "applicationCategory": "BusinessApplication",
-  "description": "The modern claims management platform built for independent appraisers. Manage claims, schedule inspections, and sync with Google — all in one place.",
+  "description": "Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place. Currently in private beta.",
   "url": "https://prazyl.com",
-  "downloadUrl": "https://prazyl.app",
   "operatingSystem": "Web Browser",
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "Starter Plan",
-      "price": "99",
-      "priceCurrency": "USD",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "99",
-        "priceCurrency": "USD",
-        "unitText": "MONTH"
-      }
-    },
-    {
-      "@type": "Offer",
-      "name": "Professional Plan",
-      "price": "149",
-      "priceCurrency": "USD",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "149",
-        "priceCurrency": "USD",
-        "unitText": "MONTH"
-      }
-    },
-    {
-      "@type": "Offer",
-      "name": "Enterprise Plan",
-      "price": "199",
-      "priceCurrency": "USD",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "199",
-        "priceCurrency": "USD",
-        "unitText": "MONTH"
-      }
-    }
-  ],
   "publisher": {
     "@type": "Organization",
-    "name": "PRĀZYL, Inc.",
+    "name": "Prazyl, Inc.",
     "url": "https://prazyl.com"
-  },
-  "screenshot": "https://prazyl.com/screenshot.png"
+  }
 };
 
 export default function Home() {
@@ -74,7 +33,8 @@ export default function Home() {
         <main>
           <HeroSection />
           <FeaturesSection />
-          <PricingSection />
+          <WorkflowSection />
+          <WaitlistSection />
           <FAQSection />
         </main>
         <Footer />
