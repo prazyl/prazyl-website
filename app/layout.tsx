@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://prazyl.com'),
   title: {
-    default: 'Prazyl — Claims Management for Independent Appraisers',
+    default: 'Prazyl — Claims Management for Appraisers',
     template: '%s | Prazyl'
   },
   description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place. Currently in private beta.',
@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://prazyl.com',
     siteName: 'Prazyl',
-    title: 'Prazyl — Claims Management for Independent Appraisers',
+    title: 'Prazyl — Claims Management for Appraisers',
     description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Prazyl — Claims Management for Independent Appraisers',
+    title: 'Prazyl — Claims Management for Appraisers',
     description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place.',
   },
   robots: {
