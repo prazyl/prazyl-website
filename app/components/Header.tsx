@@ -35,16 +35,16 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#features" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
+            <Link href="/#features" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
               Features
             </Link>
-            <Link href="#workflow" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
+            <Link href="/#workflow" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
               How it works
             </Link>
             <Link href="/integrations" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
               Integrations
             </Link>
-            <Link href="#faq" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
+            <Link href="/#faq" className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors">
               FAQ
             </Link>
           </nav>
@@ -58,7 +58,7 @@ export default function Header() {
               Sign in
             </Link>
             <Link
-              href="#waitlist"
+              href="/#waitlist"
               className="px-4 py-2 text-sm font-medium text-[#0a0a0a] bg-teal-400 hover:bg-teal-300 rounded-lg transition-colors"
             >
               Join Waitlist
@@ -72,14 +72,14 @@ export default function Header() {
         <div className="md:hidden bg-[#18181b] border-t border-[#27272a]">
           <div className="px-4 py-6 space-y-4">
             <Link
-              href="#features"
+              href="/#features"
               className="block text-base font-medium text-[#a1a1aa] hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Features
             </Link>
             <Link
-              href="#workflow"
+              href="/#workflow"
               className="block text-base font-medium text-[#a1a1aa] hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -93,7 +93,7 @@ export default function Header() {
               Integrations
             </Link>
             <Link
-              href="#faq"
+              href="/#faq"
               className="block text-base font-medium text-[#a1a1aa] hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -107,7 +107,7 @@ export default function Header() {
                 Sign in
               </Link>
               <Link
-                href="#waitlist"
+                href="/#waitlist"
                 onClick={() => setIsMenuOpen(false)}
                 className="block w-full text-center px-4 py-2 text-base font-medium text-[#0a0a0a] bg-teal-400 hover:bg-teal-300 rounded-lg transition-colors"
               >
