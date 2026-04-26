@@ -53,7 +53,7 @@ const faqs = [
   {
     question: 'How do I get help?',
     answer:
-      "During beta, every user has a direct line to the team building Prazyl. Email hello@prazyl.com — you'll get a real response from someone who can actually fix the issue.",
+      "During beta, every user has a direct line to the team building Prazyl. Email support@prazyl.com — you'll get a real response from someone who can actually fix the issue.",
   },
 ];
 
@@ -147,10 +147,10 @@ export default function FAQSection() {
             Email us directly. During beta, the team building Prazyl reads every message.
           </p>
           <a
-            href="mailto:hello@prazyl.com"
+            href="mailto:support@prazyl.com"
             className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg text-[#0a0a0a] bg-teal-400 hover:bg-teal-300 transition-colors"
           >
-            Email hello@prazyl.com
+            Email support@prazyl.com
           </a>
         </motion.div>
       </div>

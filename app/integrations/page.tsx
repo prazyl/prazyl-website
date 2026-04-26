@@ -314,7 +314,7 @@ export default function Integrations() {
             actually need, not what makes a long marketing list.
           </p>
           <a
-            href="mailto:hello@prazyl.com?subject=Integration%20request"
+            href="mailto:support@prazyl.com?subject=Integration%20request"
             className="inline-flex items-center gap-2 px-6 py-3 bg-teal-400 hover:bg-teal-300 text-[#0a0a0a] font-medium rounded-lg transition-colors"
           >
             Suggest an integration

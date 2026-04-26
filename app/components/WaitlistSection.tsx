@@ -49,7 +49,7 @@ export default function WaitlistSection() {
 
           <div className="flex justify-center mb-10">
             <a
-              href="mailto:hello@prazyl.com?subject=Beta%20waitlist&amp;body=Hi%20Prazyl%20team%2C%0A%0AI%27d%20like%20to%20join%20the%20beta.%20Here%27s%20a%20bit%20about%20me%3A%0A%0A-%20Name%3A%0A-%20Years%20appraising%3A%0A-%20Lines%20of%20business%20%28property%2Fauto%2Fother%29%3A%0A-%20Current%20tools%3A%0A-%20Approximate%20monthly%20claim%20volume%3A%0A%0AThanks%21"
+              href="mailto:support@prazyl.com?subject=Beta%20waitlist&amp;body=Hi%20Prazyl%20team%2C%0A%0AI%27d%20like%20to%20join%20the%20beta.%20Here%27s%20a%20bit%20about%20me%3A%0A%0A-%20Name%3A%0A-%20Years%20appraising%3A%0A-%20Lines%20of%20business%20%28property%2Fauto%2Fother%29%3A%0A-%20Current%20tools%3A%0A-%20Approximate%20monthly%20claim%20volume%3A%0A%0AThanks%21"
               className="group inline-flex items-center gap-2 px-8 py-4 text-base font-medium text-[#0a0a0a] bg-teal-400 hover:bg-teal-300 rounded-lg transition-all"
             >
               Request Beta Access

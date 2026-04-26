@@ -76,10 +76,10 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="mailto:hello@prazyl.com"
+              href="mailto:support@prazyl.com"
               className="text-[#71717a] hover:text-white text-sm transition-colors"
             >
-              hello@prazyl.com
+              support@prazyl.com
             </a>
           </div>
         </div>
