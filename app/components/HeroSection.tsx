@@ -53,7 +53,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-6 text-lg sm:text-xl text-[#a1a1aa] max-w-2xl mx-auto"
           >
-            The modern platform for independent appraisers. Manage claims, schedule inspections,
+            The modern platform for appraisers. Manage claims, schedule inspections,
             generate documents, and sync with Google or Microsoft 365 — all in one place.
           </motion.p>
 
@@ -90,7 +90,7 @@ export default function HeroSection() {
               <svg className="h-5 w-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Built for independent appraisers</span>
+              <span>Built for appraisers</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="h-5 w-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20">

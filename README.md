@@ -1,6 +1,6 @@
 # Prazyl Marketing Website
 
-Marketing site for [Prazyl](https://prazyl.com) — claims management software for independent appraisers. Built with Next.js 15, TypeScript, and Tailwind CSS v4.
+Marketing site for [Prazyl](https://prazyl.com) — claims management software for appraisers. Built with Next.js 15, TypeScript, and Tailwind CSS v4.
 
 The site is currently positioned as **private beta with waitlist**. The companion app lives at https://prazyl.app.
 

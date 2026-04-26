@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'Is Prazyl available right now?',
     answer:
-      "Prazyl is in private beta. We're onboarding independent appraisers in small batches so we can support every account properly. Join the waitlist and we'll reach out when we have a slot for you.",
+      "Prazyl is in private beta. We're onboarding appraisers in small batches so we can support every account properly. Join the waitlist and we'll reach out when we have a slot for you.",
   },
   {
     question: 'How much does it cost?',

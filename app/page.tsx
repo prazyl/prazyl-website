@@ -11,7 +11,7 @@ const structuredData = {
   "@type": "SoftwareApplication",
   "name": "Prazyl",
   "applicationCategory": "BusinessApplication",
-  "description": "Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place. Currently in private beta.",
+  "description": "Claims management built for appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place. Currently in private beta.",
   "url": "https://prazyl.com",
   "operatingSystem": "Web Browser",
   "publisher": {

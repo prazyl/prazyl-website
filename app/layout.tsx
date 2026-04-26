@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     default: 'Prazyl — Claims Management for Appraisers',
     template: '%s | Prazyl'
   },
-  description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place. Currently in private beta.',
-  keywords: ['claims management', 'independent appraisers', 'insurance appraisers', 'claims software', 'inspection scheduling', 'appraiser software', 'symbility', 'xactimate'],
+  description: 'Claims management built for appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place. Currently in private beta.',
+  keywords: ['claims management', 'appraisers', 'insurance appraisers', 'claims software', 'inspection scheduling', 'appraiser software', 'symbility', 'xactimate'],
   authors: [{ name: 'Prazyl' }],
   creator: 'Prazyl',
   publisher: 'Prazyl',
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     url: 'https://prazyl.com',
     siteName: 'Prazyl',
     title: 'Prazyl — Claims Management for Appraisers',
-    description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place.',
+    description: 'Claims management built for appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Prazyl — Claims Management for Appraisers',
-    description: 'Claims management built for independent appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place.',
+    description: 'Claims management built for appraisers. One workspace per claim — scheduling, photos, documents, email, and invoicing in one place.',
   },
   robots: {
     index: true,

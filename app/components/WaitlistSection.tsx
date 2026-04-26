@@ -42,7 +42,7 @@ export default function WaitlistSection() {
               Get on the waitlist
             </h2>
             <p className="mt-4 text-lg text-[#a1a1aa] max-w-2xl mx-auto">
-              Prazyl is in private beta. We&apos;re onboarding independent appraisers in small batches so
+              Prazyl is in private beta. We&apos;re onboarding appraisers in small batches so
               we can support every account properly. Tell us about your work and we&apos;ll be in touch.
             </p>
           </div>

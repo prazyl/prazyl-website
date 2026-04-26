@@ -2,7 +2,7 @@
 
 ## About this site
 
-Marketing website for **Prazyl** — claims management software for **independent appraisers** (not adjusters). Currently in **private beta** with no live pricing. All CTAs route to a waitlist.
+Marketing website for **Prazyl** — claims management software for **appraisers** (not adjusters). Currently in **private beta** with no live pricing. All CTAs route to a waitlist.
 
 The companion app lives at https://prazyl.app (separate Next.js project at `C:\Users\ryan\dev\v0-prazyl-app`).
 
@@ -49,7 +49,7 @@ Pages:
 
 ## Content rules
 
-- Always say "appraiser", never "adjuster" — Prazyl is for independent appraisers.
+- Always say "appraiser", never "adjuster". Use "appraisers" alone — don't qualify with "independent" (appraisers are independent by definition under appraisal/umpire law).
 - "Prazyl" (no macron) in body copy. The logotype keeps "PRAZYL".
 - No fabricated stats, testimonials, or user counts. Beta = small numbers, lean into it.
 - Pricing copy is **off the site** while in beta. Hero/CTAs go to the waitlist (`#waitlist` anchor).

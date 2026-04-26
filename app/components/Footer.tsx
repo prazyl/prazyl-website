@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="text-lg font-bold tracking-wider">PRAZYL</span>
             </Link>
             <p className="mt-4 text-[#71717a] text-sm max-w-md">
-              Claims management built for independent appraisers. One workspace per claim,
+              Claims management built for appraisers. One workspace per claim,
               from assignment to invoice. Currently in private beta.
             </p>
           </div>
